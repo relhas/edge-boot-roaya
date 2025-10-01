@@ -1,0 +1,20 @@
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Python
+.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editor/OS
+.DS_Store
+*.log
+
+# Misc
+.env
+coverage/
+docs/screenshots/
+
+
