@@ -28,6 +28,8 @@ export function AddItem({ onAdded }: { onAdded: () => void }) {
         placeholder="Describe your item"
         minLength={1}
         style={{ flex: 1, padding: '0.5rem' }}
+        placeholder="Describe your item"
+        minLength={1}
       />
       <button type="submit" disabled={mutation.isPending || text.trim().length < 1}>
         {mutation.isPending ? 'Adding…' : 'Add'}

@@ -29,7 +29,7 @@ async def test_items_create_and_list_ordering() -> None:
         assert rlist.status_code == 200
         data = rlist.json()
         assert [d["id"] for d in data] == [item2["id"], item1["id"]]
-
+        assert "T" in item2["created_at"]
 
 @pytest.mark.asyncio
 async def test_items_reject_empty_text() -> None:
